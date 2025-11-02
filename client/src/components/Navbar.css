@@ -1,0 +1,81 @@
+/* src/css/Navbar.css */
+
+/* General Navbar */
+nav {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 15px 40px;
+  background: linear-gradient(90deg, #00bcd4, #00796b);
+  color: white;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  border-radius: 0 0 20px 20px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  transition: all 0.3s ease;
+}
+
+/* Navbar links */
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  padding: 10px 15px;
+  border-radius: 10px;
+  transition: all 0.3s ease-in-out;
+  position: relative;
+}
+
+/* Hover effect */
+nav a:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  transform: translateY(-2px);
+  box-shadow: 0 3px 6px rgba(0,0,0,0.15);
+}
+
+/* Active page underline */
+nav a.active::after {
+  content: '';
+  position: absolute;
+  bottom: -5px;
+  left: 10%;
+  width: 80%;
+  height: 3px;
+  background: #ffeb3b;
+  border-radius: 5px;
+}
+
+/* Logout button */
+nav button {
+  margin-left: auto;
+  padding: 8px 18px;
+  border-radius: 12px;
+  border: none;
+  cursor: pointer;
+  background: #ff4d4d;
+  color: white;
+  font-weight: 600;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.2);
+}
+
+nav button:hover {
+  background: #e60000;
+  transform: scale(1.05) translateY(-2px);
+  box-shadow: 0 5px 12px rgba(0,0,0,0.25);
+}
+
+/* Responsive Navbar */
+@media (max-width: 768px) {
+  nav {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+    padding: 15px 20px;
+  }
+  nav button {
+    margin-left: 0;
+  }
+}

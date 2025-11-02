@@ -1,0 +1,161 @@
+/* ---------- Main Container ---------- */
+.tools-container {
+  min-height: 100vh;
+  padding: 2rem 5%;
+  background: linear-gradient(135deg, #0d1633, #324c7f, #141549);
+  color: #f1f1f1;
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+  animation: fadeIn 1s ease-in-out;
+  border-radius: 3rem;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(15px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* ---------- Page Headings ---------- */
+.tools-container h2 {
+  font-size: 2rem;
+  color: #00d4ff;
+  margin-bottom: 1rem;
+}
+
+.tools-container h3 {
+  font-size: 1.4rem;
+  color: #8be9fd;
+  margin-bottom: 1rem;
+  border-left: 4px solid #00d4ff;
+  padding-left: 8px;
+}
+
+/* ---------- Add Tool Section ---------- */
+.add-tool-section {
+  background: rgba(255, 255, 255, 0.07);
+  border-radius: 18px;
+  padding: 1.5rem;
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease;
+}
+
+.add-tool-section:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 26px rgba(0, 0, 0, 0.35);
+}
+
+/* ---------- Error Message ---------- */
+.error-message {
+  color: #ff6b6b;
+  margin-bottom: 0.8rem;
+  font-weight: 500;
+}
+
+/* ---------- Form Inputs ---------- */
+.tools-form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.tools-form input {
+  flex: 1 1 200px;
+  padding: 10px 12px;
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  background: rgba(255, 255, 255, 0.05);
+  color: #f1f1f1;
+  outline: none;
+  backdrop-filter: blur(6px);
+  transition: all 0.3s ease;
+}
+
+.tools-form input:focus {
+  border: 1px solid #00d4ff;
+  box-shadow: 0 0 10px rgba(0, 212, 255, 0.5);
+}
+
+/* ---------- Add Button ---------- */
+.tools-form button {
+  background: linear-gradient(135deg, #007cf0, #00dfd8);
+  border: none;
+  padding: 10px 20px;
+  border-radius: 12px;
+  color: #fff;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.tools-form button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 18px rgba(0, 212, 255, 0.6);
+}
+
+/* ---------- Tools List ---------- */
+.tools-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+}
+
+/* ---------- Tool Card ---------- */
+.tool-card {
+  background: rgba(255, 255, 255, 0.07);
+  border-radius: 18px;
+  padding: 1rem 1.5rem;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.25);
+  transition: all 0.3s ease;
+}
+
+.tool-card:hover {
+  transform: translateY(-5px) scale(1.02);
+  box-shadow: 0 8px 26px rgba(0, 0, 0, 0.35);
+}
+
+/* ---------- Card Text ---------- */
+.tool-card h4 {
+  color: #f1f1f1;
+  font-size: 1.1rem;
+  margin-bottom: 0.3rem;
+}
+
+.tool-card p {
+  color: #d9d9d9;
+  font-size: 0.9rem;
+  margin: 0.2rem 0;
+}
+
+/* ---------- Tool Card Button ---------- */
+.tool-card button {
+  margin-top: 0.6rem;
+  background: linear-gradient(135deg, #007cf0, #00dfd8);
+  border: none;
+  padding: 6px 12px;
+  border-radius: 10px;
+  color: #fff;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.tool-card button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 16px rgba(0, 212, 255, 0.5);
+}
+
+/* ---------- Responsive ---------- */
+@media (max-width: 768px) {
+  .tools-form {
+    flex-direction: column;
+  }
+
+  .tools-list {
+    grid-template-columns: 1fr;
+  }
+}
