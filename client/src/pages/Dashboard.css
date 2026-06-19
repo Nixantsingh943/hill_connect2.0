@@ -1,4 +1,4 @@
-/* ---------- Root Layout ---------- */
+/* Root Layout  */
 .dashboard-container {
   min-height: 100vh;
   padding: 2rem 5%;
@@ -24,7 +24,7 @@
   }
 }
 
-/* ---------- User Details Card ---------- */
+/* User Details Card */
 .user-details-card {
   background: rgba(255, 255, 255, 0.08);
   border-radius: 16px;
@@ -54,7 +54,7 @@
   font-weight: 300;
 }
 
-/* ---------- Section Titles ---------- */
+/*  Section Titles  */
 .dashboard-section h2 {
   font-size: 1.6rem;
   color: #8be9fd;
@@ -69,14 +69,14 @@
   font-weight: 500;
 }
 
-/* ---------- Cards Container ---------- */
+/* Cards Container  */
 .cards-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
   gap: 1.5rem;
 }
 
-/* ---------- Individual Card ---------- */
+/*  Individual Card */
 .card {
   position: relative;
   background: rgba(255, 255, 255, 0.07);
@@ -94,14 +94,14 @@
   box-shadow: 0 8px 26px rgba(0, 0, 0, 0.35);
 }
 
-/* ---------- Card Icon ---------- */
+/* Card Icon  */
 .card-icon {
   font-size: 2rem;
   color: #00d4ff;
   margin-bottom: 0.8rem;
 }
 
-/* ---------- Card Text ---------- */
+/*  Card Text  */
 .card-content h4 {
   font-size: 1.1rem;
   font-weight: 500;
@@ -115,7 +115,7 @@
   line-height: 1.4;
 }
 
-/* ---------- Badges ---------- */
+/*  Badges */
 .badge {
   display: inline-block;
   margin-top: 0.8rem;
@@ -137,7 +137,7 @@
   color: #fff;
 }
 
-/* ---------- Delete Button ---------- */
+/* Delete Button  */
 .delete-btn {
   margin-top: 10px;
   background: linear-gradient(135deg, #ff416c, #ff4b2b);
@@ -156,7 +156,7 @@
   transform: scale(1.05);
 }
 
-/* ---------- Responsive ---------- */
+/*  Responsive  */
 @media (max-width: 768px) {
   .dashboard-container {
     padding: 1.5rem;

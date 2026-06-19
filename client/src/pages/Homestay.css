@@ -1,4 +1,4 @@
-/* ---------- Main Container ---------- */
+/*  Main Container  */
 .homestay-container {
   min-height: 100vh;
   padding: 2rem 5%;
@@ -17,7 +17,7 @@
   to { opacity: 1; transform: translateY(0); }
 }
 
-/* ---------- Page Headings ---------- */
+/* Page Headings  */
 .homestay-container h2 {
   font-size: 2rem;
   color: #00d4ff;
@@ -32,7 +32,7 @@
   padding-left: 8px;
 }
 
-/* ---------- Add Homestay Section ---------- */
+/*  Add Homestay Section */
 .add-homestay-section {
   background: rgba(255, 255, 255, 0.07);
   border-radius: 18px;
@@ -48,14 +48,14 @@
   box-shadow: 0 6px 26px rgba(0, 0, 0, 0.35);
 }
 
-/* ---------- Error Message ---------- */
+/* Error Message  */
 .error-message {
   color: #ff6b6b;
   margin-bottom: 0.8rem;
   font-weight: 500;
 }
 
-/* ---------- Form Inputs ---------- */
+/* Form Inputs  */
 .homestay-form {
   display: flex;
   flex-wrap: wrap;
@@ -79,7 +79,7 @@
   box-shadow: 0 0 10px rgba(0, 212, 255, 0.5);
 }
 
-/* ---------- Add Button ---------- */
+/* Add Button  */
 .homestay-form button {
   background: linear-gradient(135deg, #007cf0, #00dfd8);
   border: none;
@@ -96,7 +96,7 @@
   box-shadow: 0 4px 18px rgba(0, 212, 255, 0.6);
 }
 
-/* ---------- Search Section ---------- */
+/*  Search Section  */
 .search-section {
   display: flex;
   flex-wrap: wrap;
@@ -121,7 +121,7 @@
   box-shadow: 0 0 8px rgba(0, 212, 255, 0.5);
 }
 
-/* ---------- Homestay Cards ---------- */
+/* Homestay Cards  */
 .homestay-list {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -143,7 +143,7 @@
   box-shadow: 0 8px 26px rgba(0, 0, 0, 0.35);
 }
 
-/* ---------- Card Text ---------- */
+/*  Card Text  */
 .homestay-card h4 {
   color: #f1f1f1;
   font-size: 1.1rem;
@@ -172,7 +172,7 @@
   box-shadow: 0 4px 16px rgba(0, 212, 255, 0.5);
 }
 
-/* ---------- Responsive ---------- */
+/*  Responsive */
 @media (max-width: 768px) {
   .homestay-form, .search-section {
     flex-direction: column;
