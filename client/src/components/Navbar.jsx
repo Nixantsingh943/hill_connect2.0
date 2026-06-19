@@ -21,14 +21,17 @@ export default function Navbar() {
       {!user && <Link to="/register" className={isActive("/register")}>Register</Link>}
 
       {user && (
-        <>
-          <Link to="/dashboard" className={isActive("/dashboard")}>Dashboard</Link>
-          <Link to="/rides" className={isActive("/rides")}>Rides</Link>
-          <Link to="/homestay" className={isActive("/homestay")}>Homestays</Link>
-          <Link to="/toolsharing" className={isActive("/toolsharing")}>Tools</Link>
-          <button onClick={handleLogout}>Logout</button>
-        </>
-      )}
+  <>
+    <Link to="/dashboard" className={isActive("/dashboard")}>Dashboard</Link>
+    <Link to="/rides" className={isActive("/rides")}>Rides</Link>
+    <Link to="/homestay" className={isActive("/homestay")}>Homestays</Link>
+    <Link to="/toolsharing" className={isActive("/toolsharing")}>Tools</Link>
+    <Link to="/community-events" className={isActive("/community-events")}>
+      Events
+    </Link>
+    <button onClick={handleLogout}>Logout</button>
+  </>
+)}
     </nav>
   );
 }

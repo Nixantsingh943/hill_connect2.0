@@ -12,6 +12,7 @@ import RideSharing from "./pages/RideSharing";
 import Homestay from "./pages/Homestay";
 import ToolsSharing from "./pages/ToolSharing";
 import Dashboard from "./pages/Dashboard";
+import CommunityEvent from "./pages/CommunityEvent";
 
 // Auth
 import Login from "./auth/Login";
@@ -21,12 +22,12 @@ import Register from "./auth/Register";
 import "./App.css";
 
 function App() {
-  // ======= State Management =======
+  //  State Management 
   const [ridesList, setRidesList] = useState([]);
   const [homestays, setHomestays] = useState([]);
   const [tools, setTools] = useState([]);
 
-  // ======= Fetch Data from Backend =======
+  //  Fetch Data from Backend 
   useEffect(() => {
     const API_BASE = "http://localhost:5001/api";
 
@@ -54,13 +55,13 @@ function App() {
     fetchData();
   }, []);
 
-  // ======= Protected Route Wrapper =======
+  //  Protected Route Wrapper 
   const Private = ({ children }) => {
-    const token = localStorage.getItem("token");
-    return token ? children : <Navigate to="/login" replace />;
-  };
+  const user = localStorage.getItem("currentUser");
+  return user ? children : <Navigate to="/login" replace />;
+};
 
-  // ======= Render App =======
+  //  Render App 
   return (
     <BrowserRouter>
       <Navbar />
@@ -96,6 +97,14 @@ function App() {
             </Private>
           }
         />
+        <Route
+  path="/community-events"
+  element={
+    <Private>
+      <CommunityEvent />
+    </Private>
+  }
+/>
         <Route
           path="/dashboard"
           element={
