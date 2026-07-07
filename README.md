@@ -294,7 +294,7 @@ Actions performed offline will automatically sync once internet connectivity is 
 Clone the repository
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/HillConnect.git
+git clone https://github.com/Nixantsingh943/hill_connect2.0/
 ```
 
 Frontend
